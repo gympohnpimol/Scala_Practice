@@ -1,4 +1,3 @@
-
 object TryFunctions extends App {
 
     def mySum(a: Int, b: Int): Int = {

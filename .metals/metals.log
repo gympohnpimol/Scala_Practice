@@ -1,0 +1,113 @@
+2020.12.02 21:06:04 INFO  Started: Metals version 0.9.7 in workspace '/Users/gym/Desktop/Scala_Practice' for client vscode.
+2020.12.02 21:06:04 INFO  time: initialize in 0.38s
+2020.12.02 21:06:05 WARN  Build server is not auto-connectable.
+2020.12.02 21:06:05 WARN  no build tool detected in workspace '/Users/gym/Desktop/Scala_Practice'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.02 21:06:05 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.02 21:06:12 INFO  no build target: using presentation compiler with only scala-library
+Dec 02, 2020 9:06:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+Dec 02, 2020 9:06:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+Dec 02, 2020 9:06:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11
+Dec 02, 2020 9:06:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 16
+Dec 02, 2020 9:06:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 20
+Dec 02, 2020 9:06:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 24
+2020.12.02 21:06:15 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.02 21:07:41 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.02 21:13:16 WARN  no build tool detected in workspace '/Users/gym/Desktop/Scala_Practice'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.02 21:13:39 WARN  no build tool detected in workspace '/Users/gym/Desktop/Scala_Practice'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.02 21:13:40 WARN  no build tool detected in workspace '/Users/gym/Desktop/Scala_Practice'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.02 21:13:53 INFO  
+2020.12.02 21:13:53 INFO  Template applied in /Users/gym/Desktop/Scala_Practice/./hello-world
+2020.12.02 21:13:53 INFO  
+2020.12.02 21:13:53 INFO  giter8.Giter8 exit: 0
+2020.12.02 21:13:53 INFO  time: ran 'giter8.Giter8' in 3.67s
+Dec 02, 2020 9:22:47 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Dec 02, 2020 9:22:47 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+2020.12.02 21:23:14 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+Dec 02, 2020 11:02:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.InterruptedException
+java.util.concurrent.CompletionException: java.lang.InterruptedException
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:673)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1975)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:42)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.pc.VirtualFileParams.checkCanceled(VirtualFileParams.java:25)
+	at scala.meta.internal.pc.CompletionProvider.$anonfun$completions$1(CompletionProvider.scala:76)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.toStream(Iterator.scala:1417)
+	at scala.collection.Iterator.toStream$(Iterator.scala:1416)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1431)
+	at scala.collection.Iterator.$anonfun$toStream$1(Iterator.scala:1417)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1173)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1163)
+	at scala.collection.immutable.StreamIterator.$anonfun$next$1(Stream.scala:1061)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1055)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:31)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at com.google.gson.Gson.toJson(Gson.java:648)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670)
+	... 9 more
+
+2020.12.02 23:03:33 WARN  no build tool detected in workspace '/Users/gym/Desktop/Scala_Practice'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.02 23:03:33 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.02 23:04:22 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.02 23:04:33 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.02 23:04:46 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.02 23:05:06 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:34:35 WARN  no build tool detected in workspace '/Users/gym/Desktop/Scala_Practice'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.03 00:34:35 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:34:54 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:35:18 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:35:39 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:36:03 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:37:36 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:37:53 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:38:30 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:38:39 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:38:54 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:39:06 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:39:55 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:41:02 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:42:34 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:43:04 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:43:10 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:44:18 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:44:22 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:45:22 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:45:41 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:55:55 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 00:56:21 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 01:25:16 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 01:26:19 WARN  no build target for: /Users/gym/Desktop/Scala_Practice/Beginning.scala
+2020.12.03 01:27:04 INFO  shutting down Metals
