@@ -31,4 +31,10 @@ object PlaySome extends App{
     rowSums.foreach( row => pw.println(row))
     pw.close()
 
+    // Curry function
+    def add(x: Int)(y: Int) : Int = x+y
+    val plus3 = add(3)(_) // function
+    val ten = plus3(7)
+
+    println(ten)
 }
