@@ -15,3 +15,4 @@ object PlayTryCatch extends App{
     }
     println(num)
 }
+
