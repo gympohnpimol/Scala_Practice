@@ -30,6 +30,5 @@ object PlaySome extends App{
     val pw = new PrintWriter(filename = "output.txt")
     rowSums.foreach( row => pw.println(row))
     pw.close()
-    
 
 }
