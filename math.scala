@@ -9,7 +9,7 @@ object Factorial extends App{
         }
 
     }
-    //println(fac(n=3))
+    println(fac(n=3))
 }
 
 // prime
